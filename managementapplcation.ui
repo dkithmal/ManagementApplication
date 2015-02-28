@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManagementApplcation</class>
+ <widget class="QWidget" name="ManagementApplcation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>666</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Management Applcation</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tWManagementPanel">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Uploading Panel</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" rowspan="3">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="lPi">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rasberry pi List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="lWConnectedList">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="lImageList">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Image List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="lWImageList">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pBAddImages">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Add Images</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbRemoveImages">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Remove Images</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pBUploadImages">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Upload</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Control Panel</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" rowspan="2">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lPi_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rasberry pi List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="lWConnectedList_2">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="lImageList_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Image List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="lWImageList_2">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Delete Selected Images</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Set Selected Image As Default Image</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Show Only Default</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Show Slide Show</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pBAddImages</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>addImagesClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>592</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>763</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbRemoveImages</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>removeImagesClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>642</x>
+     <y>592</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>734</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pBUploadImages</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>uploadImagesClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>643</x>
+     <y>631</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>932</x>
+     <y>581</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lWConnectedList_2</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>controlPanelConnectedListClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>841</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>deleteSelectedImagesButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>557</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>780</x>
+     <y>556</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>setDefaultImageButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>612</x>
+     <y>592</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>811</x>
+     <y>593</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>showOnlyDefaultButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>627</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>755</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>ManagementApplcation</receiver>
+   <slot>showSlideShowButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>624</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>566</x>
+     <y>732</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addImagesClicked()</slot>
+  <slot>removeImagesClicked()</slot>
+  <slot>uploadImagesClicked()</slot>
+  <slot>controlPanelConnectedListClicked(QModelIndex)</slot>
+  <slot>deleteSelectedImagesButtonClicked()</slot>
+  <slot>setDefaultImageButtonClicked()</slot>
+  <slot>showOnlyDefaultButtonClicked()</slot>
+  <slot>showSlideShowButtonClicked()</slot>
+ </slots>
+</ui>
